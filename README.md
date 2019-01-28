@@ -8,21 +8,34 @@
 + 退出
 + ...
 
+---
 ### 安装
-  下载项目后，安装python库 [requirements.txt](https://github.com/featherL/itchat_remote_controller/blob/master/requirements.txt)
-  运行命令
-  ```
-  $ pip install -r requirements.txt
-  ```
-  
-  或者手动安装 itchat 
-  ```
-  $ pip install itchat
-  ```
-  
-  要交互式shell功能的还需安装ptyprocess库，只在Linux下可用
-  ```
-  $ pip install ptyprocess
-  ```
-  然后去掉文件cmd.py中的代码注释，具体看文件
+下载项目后，安装python库 [requirements.txt](https://github.com/featherL/itchat_remote_controller/blob/master/requirements.txt)
+运行命令
+```
+$ pip install -r requirements.txt
+```
+
+或者手动安装 itchat 
+```
+$ pip install itchat
+```
+
+要交互式shell功能的还需安装ptyprocess库，只在Linux下可用
+```
+$ pip install ptyprocess
+```
+然后去掉文件cmd.py中的代码注释，具体看文件
+
+### 运行
+运行命令
+```
+$ python main.py
+```
+
+用手机微信扫描弹出的二维码，确认登录
+
+然后就可以向文件助手发送命令了
+![发送命令](https://github.com/featherL/itchat_remote_controller/blob/master/screenshoot/1.jpeg)
+
  
