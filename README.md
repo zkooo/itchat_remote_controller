@@ -27,6 +27,8 @@ $ pip install ptyprocess
 ```
 然后去掉文件cmd.py中的代码注释，具体看文件
 
+
+---
 ### 运行
 运行命令
 ```
