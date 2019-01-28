@@ -34,6 +34,6 @@ $ python main.py
 用手机微信扫描弹出的二维码，确认登录
 
 然后就可以向文件助手发送命令了
-![发送命令](https://github.com/featherL/itchat_remote_controller/blob/master/screenshoot/1.jpeg)
+![发送命令](https://github.com/featherL/itchat_remote_controller/blob/master/screenshot/1.jpeg)
 
  
