@@ -4,13 +4,15 @@
 
 import itchat
 import os
-# import ptyprocess  # 需开启shell功能去掉此行注释，后面还有
+
+# import ptyprocess  # 需开启shell功能去掉这两行注释，后面还有
+# from threading import Thread
+
 from time import sleep
-from threading import Thread
 from subprocess import check_output, STDOUT
 from subprocess import CalledProcessError, TimeoutExpired
 from logger import logger, encode_crlf
-
+import pyscreenshot as ImageGrab
 
 switch = False
 shell = None
@@ -53,6 +55,14 @@ def do_exit(args):
     itchat.send('关闭程序...', 'filehelper')
     sleep(2)
     itchat.logout()
+
+
+def do_screen(args):
+    """屏幕截图"""
+    img_path = 'screen.jpeg'
+    im = ImageGrab.grab()
+    im.save(img_path, 'jpeg')
+    itchat.send_image(img_path, 'filehelper')
 
 
     

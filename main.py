@@ -20,11 +20,14 @@ def cmd_parser(msg):
         args = text.split(' ')
         func_name = 'do_' + args[0][1:]
         try:
-            getattr(cmd, func_name)(args)
-        except Exception as e:
-            error_msg = encode_crlf(str(e))
-            logger.error(error_msg)
+            func = getattr(cmd, func_name)
+        except:
+            func = cmd.do_help
 
+        try:
+            func(args)
+        except Exception as e:
+            logger.error(encode_crlf(str(e) )  )
 
 
 def main():

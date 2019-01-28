@@ -1,0 +1,21 @@
+2019-01-28 17:33:44,539 - main - INFO - @help
+2019-01-28 17:33:50,975 - main - INFO - @screem
+2019-01-28 17:33:50,977 - main - ERROR - module 'cmd' has no attribute 'do_screem'
+2019-01-28 17:33:59,757 - main - INFO - @screen
+2019-01-28 17:34:22,411 - main - INFO - @exit
+2019-01-28 17:37:29,659 - main - INFO - @screen
+2019-01-28 17:38:12,257 - main - INFO - @screen
+2019-01-28 17:40:51,004 - main - INFO - @screen
+2019-01-28 17:41:20,266 - main - INFO - @help
+2019-01-28 17:41:29,097 - main - INFO - @screen
+2019-01-28 17:42:00,392 - main - INFO - @screem
+2019-01-28 17:42:00,395 - main - ERROR - module 'cmd' has no attribute 'do_screem'
+2019-01-28 17:42:04,603 - main - INFO - @screen
+2019-01-28 17:43:32,258 - main - INFO - @
+2019-01-28 17:43:32,259 - main - ERROR - module 'cmd' has no attribute 'do_'
+2019-01-28 17:43:49,067 - main - INFO - @ss
+2019-01-28 17:43:49,070 - main - ERROR - module 'cmd' has no attribute 'do_ss'
+2019-01-28 17:45:44,659 - main - INFO - @
+2019-01-28 17:45:54,764 - main - INFO - @screen
+2019-01-28 17:46:22,023 - main - INFO - @exit
+2019-01-28 17:56:34,339 - main - INFO - @screen
