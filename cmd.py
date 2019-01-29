@@ -120,4 +120,5 @@ def shell_output():
             logger.debug(encode_crlf('shell %s' % line) )
     except Exception as e:
         logger.error(encode_crlf(str(e) ) )
-```
+'''
+
