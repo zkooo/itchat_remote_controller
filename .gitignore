@@ -105,3 +105,4 @@ venv.bak/
 itchat.pkl
 .idea/
 screen.jpeg
+log/
