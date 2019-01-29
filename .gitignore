@@ -103,5 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 itchat.pkl
-.idea
+.idea/
 screen.jpeg
+log/

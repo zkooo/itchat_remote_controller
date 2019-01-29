@@ -22,7 +22,7 @@ shell_path = os.getenv('SHELL')
 def do_help(args):
     """获取帮助信息"""
     objs = globals()
-    msg = '~~ 支持的命令有{\n'
+    msg = '> 支持的命令有{\n'
     for name in objs:
         if name.startswith('do_'):
             cmd = '@' + name.strip('do_')
@@ -46,7 +46,7 @@ def do_exec(args):
             result = str(e)
             logger.error(result)
 
-        msg = '<\n%s\n>' % result
+        msg = '>\n%s' % result
         itchat.send(msg, 'filehelper')
 
 
@@ -79,10 +79,10 @@ def do_shell(args):
                 t.setDaemon(True)
                 t.start()
                 switch = True
-                itchat.send('<\nshell on\n>', 'filehelper')
+                itchat.send('>\nshell on', 'filehelper')
                 logger.info('shell on')
             except Exception as e:
-                itchat.send('<\n开启失败\n>', 'filehelper')
+                itchat.send('>\n开启失败', 'filehelper')
                 switch = False
                 logger.error(encode_crlf(str(e) ) )
         else:
@@ -90,14 +90,14 @@ def do_shell(args):
             try:
                 shell.terminate(True)
                 switch = False
-                itchat.send('<\nshell off\n>', 'filehelper')
+                itchat.send('>\nshell off', 'filehelper')
                 logger.info('shell off')
             except Exception as e:
-                itchat.send('<\n关闭失败，请重新尝试\n>', 'filehelper')
+                itchat.send('>\n关闭失败，请重新尝试', 'filehelper')
                 switch = True
                 logger.error(encode_crlf(str(e) ) )
     else:
-        itchat.send('<\n当前系统没有shell\n>', 'filehelper')
+        itchat.send('>\n当前系统没有shell', 'filehelper')
 
 
 def do_s(args):
@@ -106,7 +106,7 @@ def do_s(args):
         cmd = ' '.join(args[1:]) + '\n'
         shell.write(cmd)
     else:
-        itchat.send('<\nshell off\n>', 'filehelper')
+        itchat.send('>\nshell off', 'filehelper')
 
 
 def shell_output():
@@ -120,4 +120,4 @@ def shell_output():
             logger.debug(encode_crlf('shell %s' % line) )
     except Exception as e:
         logger.error(encode_crlf(str(e) ) )
-'''
+```

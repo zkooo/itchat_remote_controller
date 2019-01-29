@@ -48,3 +48,6 @@
 2019-01-28 19:12:23,782 - main - INFO - @exec python -c 'import sys;sys.stderr.write("aaa\n");'
 2019-01-28 19:12:45,430 - main - INFO - @exec pwd
 2019-01-28 19:13:15,975 - main - INFO - @exit
+2019-01-29 18:15:26,137 - main - INFO - @screen
+2019-01-29 18:16:40,362 - main - INFO - @help
+2019-01-29 18:16:56,015 - main - INFO - @exec ls
